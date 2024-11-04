@@ -15,7 +15,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('/static/certificates/pic.jpg'); /* Absolute path */
+    background-image: url('/pic.jpg'); /* Absolute path */
     background-size: cover;
     background-attachment: fixed;
     color: #333;
