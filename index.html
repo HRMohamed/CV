@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mohamed Yehia</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#education" onclick="showSection('education')">Education</a></li>
+                <li><a href="#certificates" onclick="showSection('certificates')">Certificates and workshops</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Mohamed Yehia Ali Mohamed</h1>
+        <div class="certificate"><h2>HRIS Consultant</h2></div>
+    </header>
+
+    <section id="about" class="visible">
+        <h2>About Me</h2>
+        <p>As the HRIS Supervisor at Premier Services and Recruitment, my role involves transforming HR requirements into robust system specifications that streamline operations.</p>
+        <p>With a solid foundation in Business Administration from Helwan University Cairo, I excel in designing, implementing, and managing HR systems that enhance organizational efficiency and data integrity.</p>
+        <p>My expertise in system integration is complemented by an HRIP certification and a deep understanding of Egyptian labor laws.</p>
+        <p>The organization benefits from my ability to provide seamless technical support, train teams on system usage, and ensure compliance with data privacy regulations.</p>
+        <p>These competencies, coupled with a keen attention to detail, drive my ambition to further innovate in the HR technology space.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div id="job-container">
+            <div class="job" id="job1">
+                <h3>HRIS Consultant - Premier Services and Recruitment</h3>
+                <div class="job-content">
+                    <div class="job-details">
+                        <p>9/2024 - Present</p>
+                        <ul>
+                            <li>Understand and translate HR requirements into system specifications.</li>
+                            <li>Design, implement, and manage HR systems to meet organizational needs.</li>
+                            <li>Provide technical support, troubleshoot integration issues, and manage system upgrades.</li>
+                            <li>Ensure data accuracy, compliance with privacy regulations, and data security through collaboration with IT.</li>
+                            <li>Train HR personnel and Payroll on system usage and new functionalities.</li>
+                            <li>Ensure HR data is accurate, up-to-date, and compliant with data privacy regulations.</li>
+                            <li>Recommend upgrades or changes to improve HR operations.</li>
+                        </ul>
+                    </div>
+                    <div class="job-image">
+                        <img src="/static/certificates/premier.jpg" alt="premier" />
+                    </div>
+                </div>
+            </div>
+            <div class="job" id="job2" style="display: none;">
+                <h3>HR Senior Payroll Specialist - Premier Services and Recruitment</h3>
+                <div class="job-content">
+                    <div class="job-details">
+                        <p>6/2024 - 9/2024</p>
+                        <ul>
+                            <li>Establish and maintain strong, long-term relationships with clients.</li>
+                            <li>Serve as the primary point of contact for client inquiries and HR-related issues.</li>
+                            <li>Understand client business objectives and align HR strategies to support them.</li>
+                            <li>Provide expert advice on HR policies, procedures, and best practices.</li>
+                            <li>Assist clients with workforce planning, talent acquisition, and employee retention strategies.</li>
+                            <li>Offer guidance on compliance with employment laws and regulations.</li>
+                            <li>Coordinate and oversee the delivery of HR services, including payroll, benefits administration, performance management, and employee relations.</li>
+                            <li>Ensure timely and accurate implementation of HR processes and programs.</li>
+                            <li>Collaborate with internal teams to customize and deliver HR solutions that meet client needs.</li>
+                            <li>Address and resolve complex HR issues and employee disputes in a timely manner.</li>
+                            <li>Conduct investigations and provide recommendations for conflict resolution.</li>
+                            <li>Act as a mediator between clients and employees when necessary.</li>
+                            <li>Generate and analyze HR metrics and reports to provide insights and recommendations to clients.</li>
+                            <li>Monitor and report on key HR performance indicators and service levels.</li>
+                            <li>Use data to identify trends and inform strategic HR decisions.</li>
+                        </ul>
+                    </div>
+                    <div class="job-image">
+                        <img src="/static/certificates/premier.jpg" alt="premier" />
+                    </div>
+                </div>
+            </div>
+            <div class="job" id="job3" style="display: none;">
+                <h3>HR Payroll Specialist - Atheel Contact Center</h3>
+                <div class="job-content">
+                    <div class="job-details">
+                        <p>6/2023 - 6/2024</p>
+                        <ul>
+                            <li>Collect and enter employee time data (regular hours, overtime, allowances) from various sources (FingerPrint, ERB).</li>
+                            <li>Calculate gross wages, taxes and other deductions according to Egyptian regulations.</li>
+                            <li>Manage and process employee benefits enrollment, including health insurance, social security contributions, and other mandatory benefits.</li>
+                            <li>Prepare and distribute paychecks or direct deposits on time, adhering to Egyptian labor laws.</li>
+                            <li>Track and follow up on employee attendance, leaves (annual, sick, etc.), overtime, and absences for payroll purposes.</li>
+                            <li>Handle payroll for terminated employees, ensuring final settlements are issued correctly and according to Egyptian regulations.</li>
+                            <li>Generate and analyze various payroll reports for accounting and management.</li>
+                            <li>Respond to employee inquiries about paychecks, deductions, and benefits.</li>
+                            <li>Research and resolve any payroll discrepancies.</li>
+                        </ul>
+                    </div>
+                    <div class="job-image">
+                        <img src="/static/certificates/atheel.jpg" alt="atheel" />
+                    </div>
+                </div>
+            </div>
+            <div class="job" id="job4" style="display: none;">
+                <h3>HR Generalist - Al Rabat Business Group</h3>
+                <div class="job-content">
+                    <div class="job-details">
+                        <p>1/2021 - 6/2023</p>
+                        <ul>
+                            <li>Source top talent, screen resumes, conduct interviews, and manage the smooth onboarding of new hires.</li>
+                            <li>Act as the first point of contact for employees, maintain employee records, process leaves, and administer benefits programs.</li>
+                            <li>Ensure legal compliance, develop and maintain HR policies, and train employees on these policies.</li>
+                            <li>Dealing with the social insurance office for submitting forms 1,2 & 6.</li>
+                            <li>Participate in developing HR strategies, analyze HR data, and prepare reports to support organizational goals.</li>
+                            <li>Preparing final clearances and experience certificates for employees.</li>
+                            <li>Foster a positive work environment, address employee concerns, and contribute to a strong company culture.</li>
+                        </ul>
+                    </div>
+                    <div class="job-image">
+                        <img src="/static/certificates/alrabat.jpg" alt="Al Rabat Business Group" />
+                    </div>
+                </div>
+            </div>
+            <div class="job" id="job5" style="display: none;">
+                <h3>HR Coordinator - Al Rabat Business Group</h3>
+                <div class="job-content">
+                    <div class="job-details">
+                        <p>2020 - 2021</p>
+                        <ul>
+                            <li>Assisting with recruitment processes like screening resumes, scheduling interviews, and onboarding new hires.</li>
+                            <li>Answering employee inquiries, maintaining employee records, processing leave requests, and handling basic employee relations issues.</li>
+                            <li>Assisting with maintaining compliance with employment laws and regulations.</li>
+                            <li>Performing administrative tasks like data entry, report generation, and maintaining the HR information system.</li>
+                            <li>Disseminating HR information and updates to employees.</li>
+                        </ul>
+                    </div>
+                    <div class="job-image">
+                        <img src="/static/certificates/alrabat.jpg" alt="Al Rabat Business Group" />
+                    </div>
+                </div>
+            </div>
+            <div class="job" id="job6" style="display: none;">
+                <h3>Senior Customer Service Representative - Vodafone Egypt</h3>
+                <div class="job-content">
+                    <div class="job-details">
+                        <p>2018 - 2020</p>
+                        <ul>
+                            <li>Address escalated and complex technical issues that require in-depth knowledge and experience.</li>
+                            <li>Conduct thorough analysis to diagnose and resolve critical problems affecting customers.</li>
+                            <li>Utilize strong analytical and problem-solving skills to identify root causes and develop effective solutions.</li>
+                            <li>Possess a deep understanding of the company's products, services, and technologies.</li>
+                            <li>Stay up-to-date on the latest industry trends and technological advancements to provide the best possible support.</li>
+                            <li>Continuously learn and expand their technical knowledge to address evolving customer challenges.</li>
+                        </ul>
+                    </div>
+                    <div class="job-image">
+                        <img src="/static/certificates/vodafone.jpg" alt="Vodafone Egypt" />
+                    </div>
+                </div>
+            </div>
+            <div class="job" id="job7" style="display: none;">
+                <h3>Retail Team Leader - WE</h3>
+                <div class="job-content">
+                    <div class="job-details">
+                        <p>2017 - 2018</p>
+                        <ul>
+                            <li>Working in a fast-paced retail environment requires a blend of organization, communication, and leadership skills.</li>
+                            <li>Ensure smooth transactions and happy customers.</li>
+                            <li>Ensured team alignment with company goals and provided excellent customer experience.</li>
+                            <li>Product demonstrations not only showcase your expertise but also help in building strong connections with customers.</li>
+                            <li>Creating schedules and reports is essential for keeping the team on track and well-informed. Fostering an inspiring team environment involves setting clear goals, delegating tasks effectively, and monitoring performance to ensure everyone is working towards a common objective.</li>
+                            <li>Motivation plays a significant role in team success, so recognizing achievements, providing coaching, and encouraging creativity are vital for maintaining high morale.</li>
+                        </ul>
+                    </div>
+                    <div class="job-image">
+                        <img src="/static/certificates/we.jpg" alt="WE" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="job-navigation">
+            <button onclick="showJob(false)">Previous</button>
+            <button onclick="showJob(true)">Next</button>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <div class="certificate"><h2>Certificates</h2></div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/1.pdf')">
+            <p>Introduction to Programming Using Python</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/2.pdf')">
+            <p>Advancing Your Skills as an HR Business Partner</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/3.pdf')">
+            <p>Analytics to Your Learning Program</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/4.pdf')">
+            <p>Professional in Human Resources (PHR)®</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/5.pdf')">
+            <p>Creating a Culture of Learning</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/6.pdf')">
+            <p>Employee Experience</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/7.pdf')">
+            <p>Employee Experience in a Hybrid Business World</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/8.pdf')">
+            <p>Leading Your Org on a Journey of Allyship</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/9.pdf')">
+            <p>SAP SuccessFactors Performance and Goals Management</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/10.pdf')">
+            <p>Strategic Human Resources</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/11.pdf')">
+            <p>The Human Resources Hero</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/12.pdf')">
+            <p>HR Providing Flexible Work Options</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/13.pdf')">
+            <p>Human Resources Payroll</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/14.pdf')">
+            <p>Payroll Operations Management Workshop</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/15.pdf')">
+            <p>Essentials Of Egyptian Labor Law & Social Insurance Workshop</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/16.pdf')">
+            <p>Organizational Development Program</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/17.pdf')">
+            <p>Human Resource Information Professional (HRIP)</p>
+        </div>
+        <div class="certificate-column" onclick="showCertificate('static/certificates/18.pdf')">
+            <p>Talant Acquisition</p>
+        </div>
+        <div id="pdfViewer">
+            <canvas id="pdfCanvas"></canvas>
+            <button onclick="closePdfViewer()">Close</button>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>List of skills...</p>
+    </section>
+
+    <section id="education">
+    <h2>Education</h2>
+    <div class="education-content">
+        <div class="contact-info">
+            <p><strong>University:</strong> Helwan University Cairo</p>
+            <p><strong>Degree:</strong> Bachelor of Business Administration - BBA</p>
+            <p><strong>Field of Study:</strong> Accounting and Business/Management</p>
+            <p><strong>Grade:</strong> Good</p>
+            <p><strong>Start:</strong> May-2015 <strong>End:</strong> May-2020</p>
+        </div>
+        <div class="education-image">
+            <img src="/static/certificates/Helwan.jpg" alt="Helwan University Cairo" />
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <p><strong>Email:</strong> HRMohamedYehia@outlook.com</p>
+        <p><strong>Phone:</strong> +0201555501407</p>
+        <p><strong>Address:</strong> Kornish_El_Nile, Hadayek Helwan, Cairo, Egypt</p>
+        <p><strong>Social Media:</strong></p>
+        <p>
+            <a href="https://www.linkedin.com/in/hr-mohamed/" target="_blank">LinkedIn</a>
+            <a href="https://wa.me/01555501407" target="_blank">WhatsApp</a>
+        </p>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Mohamed Yehia Ali</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

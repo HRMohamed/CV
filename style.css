@@ -1,0 +1,304 @@
+/* Animations and Styling for Section Visibility */
+section {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+section.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/certificates/pic.jpg'); /* Absolute path */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+section {
+    position: absolute;
+    top: 230px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+p, ul {
+    color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#about { border-color: #ff0000; }
+#experience { border-color: #00ff00; }
+#skills { border-color: #0000ff; }
+#education { border-color: #ff00ff; }
+#certificates { border-color: #00ffff; }
+#contact { border-color: #ffff00; }
+
+/* PDF Viewer Styling */
+#pdfViewer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pdfViewer canvas {
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+#pdfViewer button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#pdfViewer button:hover {
+    background: #ff0000;
+    color: #fff;
+}
+/* قسم الشهادات */
+#certificates {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; /* تغيير هذا لأجل توسيط الحاوية */
+    flex-wrap: wrap;
+}
+
+/* حاوية الشهادات */
+.certificate-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; /* تغيير هذا لأجل توسيط الأعمدة */
+    gap: 20px; /* المسافة بين الأعمدة */
+    width: 100%;
+}
+
+/* أعمدة الشهادات */
+.certificate-column {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(50% - 40px); /* استخدام calc للتأكد من عرض العمود 50% مع احتساب الفجوات */
+    box-sizing: border-box; /* لضمان حساب الحشوات والحدود ضمن الأبعاد */
+}
+
+/* تأثير عند مرور الماوس */
+.certificate-column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين النص داخل الأعمدة */
+.certificate-column p {
+    margin: 0;
+    color: #444;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.certificate {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers the text */
+    width: 100%; /* Takes full width of the parent container */
+    margin: 20px 0; /* Adds some vertical spacing */
+}
+
+.certificate h2 {
+    margin: 0; /* Removes default margin for the <h2> element */
+}
+.title {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers the text */
+    width: 100%; /* Takes full width of the parent container */
+    margin: 20px 0; /* Adds some vertical spacing */
+}
+#contact {
+    border-color: #ffff00;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    color: #333;
+}
+
+.contact-info a {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #005582; /* Hover color */
+}
+#education {
+    border-color: #ff00ff;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: left;
+    flex: 1;
+}
+
+.education-image {
+    flex: 0 0 300px; /* Adjust the width as needed */
+    text-align: right;
+}
+
+.education-image img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.job {
+    margin-bottom: 40px;
+}
+
+.job-content {
+    display: flex;
+    align-items: center;  /* Vertically align the items */
+    justify-content: space-between;  /* Add space between items */
+    gap: 20px;  /* Optional: Add space between job details and image */
+}
+
+.job-details {
+    flex: 1;  /* Allow this part to take up remaining space */
+    text-align: left;  /* Align text to left */
+}
+
+.job-image {
+    flex: 0 0 150px;  /* Ensure the image container takes a specific width */
+    text-align: right;  /* Align text to right (if any) */
+}
+
+.job-image img {
+    width: 100%;  /* Make the image fit the container */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Add box shadow */
+}
+
+.job-navigation {
+    text-align: center;  /* Center the navigation buttons */
+    margin-top: 20px;  /* Add some space above the buttons */
+}
+
+.job-navigation button {
+    background-color: #4CAF50;  /* Button background color */
+    color: white;  /* Button text color */
+    padding: 10px 20px;  /* Button padding */
+    border: none;  /* Remove border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+.job-navigation button:hover {
+    background-color: #45a049;  /* Change background on hover */
+}
